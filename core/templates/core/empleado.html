@@ -1,0 +1,132 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+<div class="container pagina">
+    <form method="post" action="">
+        {% csrf_token %}
+        <div class="container row col-4" style="text-align: left;">
+            <a href="{% url 'empleados' %}" class="salir"></a>
+            <input type="submit" class="enviar" value="" />
+        </div>
+        <div class="datos col-md-8 col-12">
+            <h3 class="titulo">Empleado</h3>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.nombre|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.paterno|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.materno|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.rfc|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.curp|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.fecha_nac|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.genero|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.estado_civil|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.numero_seguro_social|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.cuenta_banco|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.banco|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.calle_num|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.colonia|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.municipio|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.estado|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.codigo_postal|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.telefono_fijo|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.celular|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-8 col-10">
+                    {{ form.correo|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.area_operativa|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.tipo_empleado|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.puesto|as_crispy_field }}
+                </div>
+                <div class="form-group col-md-4 col-5">
+                    {{ form.tipo_pago|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.usuario|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.estatus_empleado|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row renglon">
+                <div class="form-group col-md-4 col-5">
+                    {{ form.foto|as_crispy_field }}
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    $("#id_numero_seguro_social").keypress(function (e) {
+        return validaNumeros(e);
+    })
+    $("#id_codigo_postal").keypress(function (e) {
+        return validaNumeros(e);
+    })
+</script>
+{% endblock %}

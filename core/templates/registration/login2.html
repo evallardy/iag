@@ -1,0 +1,31 @@
+{% extends "core/base.html" %}
+{% load crispy_forms_tags %}
+{% block contenido %}
+<section class="proyectos py-4" style="margin-bottom: 40px;">
+    <div class="container">
+        <div class="row text-md-center">
+            <article class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Acceso</h5>
+                        <form action="" method="post" onkeypress="return anular(event)">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="form-group col-12 mb-0">
+                                    {{ form.username|as_crispy_field }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 mb-0">
+                                    {{ form.password|as_crispy_field }}
+                                </div>
+                            </div>
+                            <input type="submit" value="Ingresar" class="btn btn-secondary" style="margin-top: 10px;">
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}

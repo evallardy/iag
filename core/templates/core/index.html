@@ -1,0 +1,54 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block css %}
+<style>
+    /* Estilos para el collage de imágenes */
+    .collage-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .collage-item {
+        flex-basis: 30%; /* Ajusta el tamaño de los elementos según sea necesario */
+        margin-bottom: 20px;
+    }
+    .collage-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+</style>
+{% endblock %}
+{% block contenido %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Bienvenido</h1>
+            <p>
+                Nos dedicamos a apoyar a las empresar para que tengan un 
+                mejor y rápido crecimiento en lo que saben hacer, haciendo que sus 
+                procesos de negocio sean más eficientes y versátiles para cambios
+                repentinos en el mundo globalisado ...
+            </p>
+        </div>
+    </div>
+    <!-- Collage de imágenes -->
+    <div class="row collage-container">
+        <div class="col-md-4 collage-item">
+            <img src="{% static 'img/principal/imagen1.png' %}" alt="Imagen 1">
+            Haciendo modelos de su información completo y bien dirigidos
+        </div>
+        <div class="col-md-4 collage-item">
+            <img src="{% static 'img/principal/imagen2.png' %}" alt="Imagen 2">
+            Podemos ver la empresa como trabaja desde el personal como todos
+            los sistemas que ocupen
+        </div>
+        <div class="col-md-4 collage-item">
+            <img src="{% static 'img/principal/imagen3.png' %}" alt="Imagen 3">
+            El flujo de la información es necesario saber por donde pasa para 
+            evita los cuellos de botella
+        </div>
+        <!-- Agrega más imágenes aquí según sea necesario -->
+    </div>
+</div>
+{% endblock %}

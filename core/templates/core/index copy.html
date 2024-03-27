@@ -1,0 +1,129 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block contenido %}
+  <!-- SECCION NAVEGACIÓN-->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+    <div class="container">      
+      <a href="#" class="navbar-brand">
+        <strong>Pleyatec</strong>
+      </a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+      data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
+      aria-label="Desplegar menú de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu-principal">
+      <ul class="navbar-nav ml-auto">
+        {% if user.is_authenticated %}
+        <li class="nav-item"><a href="#" class="nav-link active">Proyectos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Empleado</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Comisiones</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">{{ user.name }}</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Cerrar</a></li>
+        {% else %}
+        <li class="nav-item"><a href="#" class="nav-link">Entrar</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- SECCION QUIEN SOY -->
+<section class="quien-soy py-4 mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 text-center">
+        <img src="{% static 'img/desarrollador.svg' %}" alt="Soy el  desarrolador"
+        class="img-fluid mb-4 mb-md-0">
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-left align-self-md-center">
+        <h1 class="display-4 font-weight-bold text-primary">¿Quien soy?</h1> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bluetooth" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="m8.543 3.948 1.316 1.316L8.543 6.58V3.948Zm0 8.104 1.316-1.316L8.543 9.42v2.632Zm-1.41-4.043L4.275 5.133l.827-.827L7.377 6.58V1.128l4.137 4.136L8.787 8.01l2.745 2.745-4.136 4.137V9.42l-2.294 2.274-.827-.827L7.133 8.01ZM7.903 16c3.498 0 5.904-1.655 5.904-8.01 0-6.335-2.406-7.99-5.903-7.99C4.407 0 2 1.655 2 8.01 2 14.344 4.407 16 7.904 16Z"/>
+        </svg>        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nisi adipisci provident eius enim id eos fugit odit facere vitae. Sit sequi praesentium, officiis rerum dicta. Deserunt ipsam officia neque!</p> 
+        <a href="#" class="btn btn-primary btn-lg">Leér más</a> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCION FILOSOFIA  -->
+<section class="filosofia py-4 bg-primary text-center text-white">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img src="{% static 'img/avatar.png' %}" width="260" height="auto" alt="Avatar de Tomas Mendez" class="img-fluid rounded-circle mb-4">
+        <p class="h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis odio amet nulla ad nobis minima doloribus inventore, aspernatur distinctio dicta ipsam fugit suscipit ullam architecto eos molestias placeat rerum facere.</p>
+        <p class="h4 font-italic">- Tomas Mendez</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION PROYECTOS -->
+<section class="proyectos py-4"  style="margin-bottom: 40px;"> 
+  <div class="container">
+    <h1 class="display-4 font-weight-bold text-center pb-4">Mis proyectos</h1>
+    <div class="row text-md-center">
+      <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+        <div class="card">
+          <img class="card-img-top h-100" src="{% static 'img/proyecto1.png' %}" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 1</h5>
+            <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit nisi beatae amet blanditiis placeat repellat minima assumenda, animi impedit totam, voluptatum aut nihil alias laboriosam expedita, dolor nam voluptatem.</p>
+            <a href="#" class="btn btn-primary">Ver proyecto</a>
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+        <div class="card">
+          <img class="card-img-top h-100" src="{% static 'img/proyecto2.png' %}" alt="Proyecto 2">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 2</h5>
+            <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit nisi beatae amet blanditiis placeat repellat minima assumenda, animi impedit totam, voluptatum aut nihil alias laboriosam expedita, dolor nam voluptatem.</p>
+            <a href="#" class="btn btn-primary">Ver proyecto</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+        <div class="card">
+          <img class="card-img-top h-100" src="{% static 'img/proyecto3.png' %}" alt="Proyecto 3">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 3</h5>
+            <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit nisi beatae amet blanditiis placeat repellat minima assumenda, animi impedit totam, voluptatum aut nihil alias laboriosam expedita, dolor nam voluptatem.</p>
+            <a href="#" class="btn btn-primary">Ver proyecto</a>
+          </div>
+        </div>
+      </article>
+      <article class="col-12 col-md-6 col-lg-3   mb-3 mb-lg-0">
+        <div class="card">
+          <img class="card-img-top h-100" src="{% static 'img/proyecto4.png' %}" alt="Proyecto 4">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto 4</h5>
+            <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sit nisi beatae amet blanditiis placeat repellat minima assumenda, animi impedit totam, voluptatum aut nihil alias laboriosam expedita, dolor nam voluptatem.</p>
+            <a href="#" class="btn btn-primary">Ver proyecto</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SECCION PIE DE PÁGINA -->
+<footer class="pie-de-pagina text-center text-md-right bg-dark text-white fixed-bottom">
+  <div class="container">
+    <p class="m-0 py-3">Copyright © 2022. Todos los derechos reservados IAG. </p>
+  </div>
+</footer>
+{% endblock %}
