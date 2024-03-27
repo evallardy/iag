@@ -1,0 +1,2510 @@
+
+[2024-03-27 05:23:14 +0000] [1232719] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7bacfe3f40>
+  on_reload: <function OnReload.on_reload at 0x7f7bacff00d0>
+  when_ready: <function WhenReady.when_ready at 0x7f7bacff01f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f7bacff0310>
+  post_fork: <function Postfork.post_fork at 0x7f7bacff0430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f7bacff0550>
+  worker_int: <function WorkerInt.worker_int at 0x7f7bacff0670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f7bacff0790>
+  pre_exec: <function PreExec.pre_exec at 0x7f7bacff08b0>
+  pre_request: <function PreRequest.pre_request at 0x7f7bacff09d0>
+  post_request: <function PostRequest.post_request at 0x7f7bacff0a60>
+  child_exit: <function ChildExit.child_exit at 0x7f7bacff0b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f7bacff0ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f7bacff0dc0>
+  on_exit: <function OnExit.on_exit at 0x7f7bacff0ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:23:14 +0000] [1232719] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:23:14 +0000] [1232719] [DEBUG] Arbiter booted
+[2024-03-27 05:23:14 +0000] [1232719] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1232719)
+[2024-03-27 05:23:14 +0000] [1232719] [INFO] Using worker: sync
+[2024-03-27 05:23:14 +0000] [1232724] [INFO] Booting worker with pid: 1232724
+[2024-03-27 05:23:14 +0000] [1232725] [INFO] Booting worker with pid: 1232725
+[2024-03-27 05:23:14 +0000] [1232726] [INFO] Booting worker with pid: 1232726
+[2024-03-27 05:23:14 +0000] [1232727] [INFO] Booting worker with pid: 1232727
+[2024-03-27 05:23:14 +0000] [1232728] [INFO] Booting worker with pid: 1232728
+[2024-03-27 05:23:14 +0000] [1232719] [DEBUG] 5 workers
+[2024-03-26 23:23:30 -0600] [1232728] [DEBUG] GET /
+[2024-03-26 23:23:33 -0600] [1232724] [DEBUG] GET /
+[2024-03-26 23:23:33 -0600] [1232727] [DEBUG] GET /server
+[2024-03-26 23:23:34 -0600] [1232724] [DEBUG] GET /.vscode/sftp.json
+[2024-03-26 23:23:34 -0600] [1232727] [DEBUG] GET /about
+[2024-03-26 23:23:34 -0600] [1232724] [DEBUG] GET /debug/default/view
+[2024-03-26 23:23:35 -0600] [1232727] [DEBUG] GET /
+[2024-03-26 23:23:35 -0600] [1232724] [DEBUG] GET /v2/_catalog
+[2024-03-26 23:23:35 -0600] [1232727] [DEBUG] GET /favicon.ico
+[2024-03-26 23:23:35 -0600] [1232724] [DEBUG] GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[2024-03-26 23:23:35 -0600] [1232727] [DEBUG] GET /server-status
+[2024-03-26 23:23:36 -0600] [1232724] [DEBUG] GET /login.action
+[2024-03-26 23:23:36 -0600] [1232726] [DEBUG] GET /_all_dbs
+[2024-03-26 23:23:36 -0600] [1232724] [DEBUG] GET /.DS_Store
+[2024-03-26 23:23:37 -0600] [1232726] [DEBUG] HEAD /
+[2024-03-26 23:23:37 -0600] [1232726] [DEBUG] Ignoring EPIPE
+[2024-03-26 23:23:37 -0600] [1232724] [DEBUG] GET /.env
+[2024-03-26 23:23:37 -0600] [1232726] [DEBUG] GET /.git/config
+[2024-03-26 23:23:38 -0600] [1232725] [DEBUG] GET /s/9343e243e2537313e2830313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+[2024-03-26 23:23:38 -0600] [1232726] [DEBUG] GET /config.json
+[2024-03-26 23:23:38 -0600] [1232725] [DEBUG] GET /telescope/requests
+[2024-03-26 23:23:39 -0600] [1232726] [DEBUG] GET /
+[2024-03-26 23:23:43 -0600] [1232727] [DEBUG] GET /
+[2024-03-26 23:23:43 -0600] [1232725] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:23:43 -0600] [1232727] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:23:43 -0600] [1232726] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:23:43 -0600] [1232724] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:23:43 -0600] [1232728] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:23:43 -0600] [1232725] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:23:43 -0600] [1232727] [DEBUG] GET /
+[2024-03-26 23:23:43 -0600] [1232724] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:23:43 -0600] [1232725] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:23:43 -0600] [1232728] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:23:43 -0600] [1232727] [DEBUG] GET /
+[2024-03-26 23:23:43 -0600] [1232724] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:23:43 -0600] [1232726] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:23:43 -0600] [1232728] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:23:43 -0600] [1232727] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:23:43 -0600] [1232725] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:23:44 -0600] [1232724] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:23:44 -0600] [1232726] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:23:44 -0600] [1232728] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:23:44 -0600] [1232726] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:23:44 -0600] [1232728] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:23:44 -0600] [1232725] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:23:44 -0600] [1232727] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:23:44 -0600] [1232724] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:23:44 -0600] [1232726] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:23:44 -0600] [1232725] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:23:44 -0600] [1232727] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:23:44 -0600] [1232724] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:23:44 -0600] [1232728] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:23:44 -0600] [1232727] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:23:44 -0600] [1232725] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-27 05:23:52 +0000] [1232719] [INFO] Handling signal: term
+[2024-03-26 23:23:52 -0600] [1232724] [INFO] Worker exiting (pid: 1232724)
+[2024-03-26 23:23:52 -0600] [1232726] [INFO] Worker exiting (pid: 1232726)
+[2024-03-26 23:23:52 -0600] [1232728] [INFO] Worker exiting (pid: 1232728)
+[2024-03-26 23:23:52 -0600] [1232725] [INFO] Worker exiting (pid: 1232725)
+[2024-03-26 23:23:52 -0600] [1232727] [INFO] Worker exiting (pid: 1232727)
+[2024-03-27 05:23:53 +0000] [1232719] [INFO] Shutting down: Master
+[2024-03-27 05:23:53 +0000] [1232760] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f36a6253f40>
+  on_reload: <function OnReload.on_reload at 0x7f36a62600d0>
+  when_ready: <function WhenReady.when_ready at 0x7f36a62601f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f36a6260310>
+  post_fork: <function Postfork.post_fork at 0x7f36a6260430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f36a6260550>
+  worker_int: <function WorkerInt.worker_int at 0x7f36a6260670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f36a6260790>
+  pre_exec: <function PreExec.pre_exec at 0x7f36a62608b0>
+  pre_request: <function PreRequest.pre_request at 0x7f36a62609d0>
+  post_request: <function PostRequest.post_request at 0x7f36a6260a60>
+  child_exit: <function ChildExit.child_exit at 0x7f36a6260b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f36a6260ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f36a6260dc0>
+  on_exit: <function OnExit.on_exit at 0x7f36a6260ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:23:53 +0000] [1232760] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:23:53 +0000] [1232760] [DEBUG] Arbiter booted
+[2024-03-27 05:23:53 +0000] [1232760] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1232760)
+[2024-03-27 05:23:53 +0000] [1232760] [INFO] Using worker: sync
+[2024-03-27 05:23:53 +0000] [1232765] [INFO] Booting worker with pid: 1232765
+[2024-03-27 05:23:54 +0000] [1232766] [INFO] Booting worker with pid: 1232766
+[2024-03-27 05:23:54 +0000] [1232767] [INFO] Booting worker with pid: 1232767
+[2024-03-27 05:23:54 +0000] [1232768] [INFO] Booting worker with pid: 1232768
+[2024-03-27 05:23:54 +0000] [1232769] [INFO] Booting worker with pid: 1232769
+[2024-03-27 05:23:54 +0000] [1232760] [DEBUG] 5 workers
+[2024-03-26 23:23:56 -0600] [1232768] [DEBUG] GET /
+[2024-03-26 23:24:12 -0600] [1232768] [DEBUG] GET /
+[2024-03-26 23:24:12 -0600] [1232767] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:24:12 -0600] [1232769] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:24:12 -0600] [1232768] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:24:12 -0600] [1232766] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:24:12 -0600] [1232768] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:24:12 -0600] [1232767] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:24:12 -0600] [1232769] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:24:12 -0600] [1232765] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:24:12 -0600] [1232769] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:24:12 -0600] [1232765] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:24:12 -0600] [1232767] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:24:12 -0600] [1232769] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:24:13 -0600] [1232765] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:24:59 -0600] [1232765] [DEBUG] GET /
+[2024-03-26 23:25:10 -0600] [1232767] [DEBUG] GET /
+[2024-03-26 23:25:10 -0600] [1232766] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:25:10 -0600] [1232768] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:25:10 -0600] [1232769] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:25:10 -0600] [1232765] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:25:10 -0600] [1232767] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:25:10 -0600] [1232765] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:25:10 -0600] [1232766] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:25:10 -0600] [1232769] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:25:10 -0600] [1232768] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:25:10 -0600] [1232765] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:25:10 -0600] [1232769] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:25:10 -0600] [1232766] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:25:10 -0600] [1232765] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 05:25:28 +0000] [1232760] [INFO] Handling signal: term
+[2024-03-26 23:25:28 -0600] [1232765] [INFO] Worker exiting (pid: 1232765)
+[2024-03-26 23:25:28 -0600] [1232766] [INFO] Worker exiting (pid: 1232766)
+[2024-03-26 23:25:28 -0600] [1232767] [INFO] Worker exiting (pid: 1232767)
+[2024-03-26 23:25:28 -0600] [1232768] [INFO] Worker exiting (pid: 1232768)
+[2024-03-26 23:25:28 -0600] [1232769] [INFO] Worker exiting (pid: 1232769)
+[2024-03-27 05:25:29 +0000] [1232760] [INFO] Shutting down: Master
+[2024-03-27 05:25:30 +0000] [1232799] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9e47f83f40>
+  on_reload: <function OnReload.on_reload at 0x7f9e47f900d0>
+  when_ready: <function WhenReady.when_ready at 0x7f9e47f901f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f9e47f90310>
+  post_fork: <function Postfork.post_fork at 0x7f9e47f90430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9e47f90550>
+  worker_int: <function WorkerInt.worker_int at 0x7f9e47f90670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9e47f90790>
+  pre_exec: <function PreExec.pre_exec at 0x7f9e47f908b0>
+  pre_request: <function PreRequest.pre_request at 0x7f9e47f909d0>
+  post_request: <function PostRequest.post_request at 0x7f9e47f90a60>
+  child_exit: <function ChildExit.child_exit at 0x7f9e47f90b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9e47f90ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9e47f90dc0>
+  on_exit: <function OnExit.on_exit at 0x7f9e47f90ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:25:30 +0000] [1232799] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:25:30 +0000] [1232799] [DEBUG] Arbiter booted
+[2024-03-27 05:25:30 +0000] [1232799] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1232799)
+[2024-03-27 05:25:30 +0000] [1232799] [INFO] Using worker: sync
+[2024-03-27 05:25:30 +0000] [1232804] [INFO] Booting worker with pid: 1232804
+[2024-03-27 05:25:30 +0000] [1232805] [INFO] Booting worker with pid: 1232805
+[2024-03-27 05:25:30 +0000] [1232806] [INFO] Booting worker with pid: 1232806
+[2024-03-27 05:25:30 +0000] [1232807] [INFO] Booting worker with pid: 1232807
+[2024-03-27 05:25:30 +0000] [1232808] [INFO] Booting worker with pid: 1232808
+[2024-03-27 05:25:30 +0000] [1232799] [DEBUG] 5 workers
+[2024-03-26 23:25:34 -0600] [1232807] [DEBUG] GET /
+[2024-03-26 23:25:34 -0600] [1232804] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:25:34 -0600] [1232805] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:25:34 -0600] [1232806] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:25:34 -0600] [1232808] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:25:35 -0600] [1232805] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:25:35 -0600] [1232804] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:25:35 -0600] [1232806] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:25:35 -0600] [1232805] [DEBUG] GET /
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:25:35 -0600] [1232804] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:25:35 -0600] [1232808] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:25:35 -0600] [1232806] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:25:35 -0600] [1232804] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:25:35 -0600] [1232807] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:25:35 -0600] [1232806] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:25:35 -0600] [1232808] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:25:35 -0600] [1232805] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:25:35 -0600] [1232804] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:25:36 -0600] [1232808] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:25:36 -0600] [1232804] [DEBUG] GET /
+[2024-03-26 23:25:36 -0600] [1232808] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:25:36 -0600] [1232806] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:25:36 -0600] [1232805] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:25:36 -0600] [1232806] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:25:36 -0600] [1232808] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:25:36 -0600] [1232804] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:25:36 -0600] [1232805] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:25:36 -0600] [1232804] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:25:36 -0600] [1232805] [DEBUG] GET /
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:25:36 -0600] [1232804] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:25:36 -0600] [1232806] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:25:36 -0600] [1232805] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:25:36 -0600] [1232808] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:25:36 -0600] [1232806] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:25:36 -0600] [1232808] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:25:36 -0600] [1232805] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:25:36 -0600] [1232804] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:25:36 -0600] [1232804] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:25:36 -0600] [1232808] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:25:36 -0600] [1232807] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:25:36 -0600] [1232804] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:26:10 -0600] [1232804] [DEBUG] GET /
+[2024-03-26 23:26:10 -0600] [1232808] [DEBUG] GET /
+[2024-03-26 23:26:10 -0600] [1232804] [DEBUG] GET /
+[2024-03-26 23:26:11 -0600] [1232804] [DEBUG] GET /
+[2024-03-26 23:26:20 -0600] [1232808] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:26:20 -0600] [1232807] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:26:21 -0600] [1232804] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:26:22 -0600] [1232805] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:26:26 -0600] [1232804] [DEBUG] GET /
+[2024-03-26 23:26:38 -0600] [1232806] [DEBUG] GET /
+[2024-03-26 23:27:06 -0600] [1232807] [DEBUG] GET /favicon.ico
+[2024-03-26 23:28:02 -0600] [1232804] [DEBUG] GET /
+[2024-03-26 23:28:02 -0600] [1232806] [DEBUG] GET /
+[2024-03-26 23:28:02 -0600] [1232804] [DEBUG] GET /
+[2024-03-26 23:28:21 -0600] [1232807] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:28:21 -0600] [1232805] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:28:22 -0600] [1232808] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:28:22 -0600] [1232806] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:28:22 -0600] [1232804] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:28:22 -0600] [1232805] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-26 23:28:22 -0600] [1232807] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:29:51 -0600] [1232807] [DEBUG] GET /
+[2024-03-26 23:29:52 -0600] [1232808] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:29:52 -0600] [1232805] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:29:52 -0600] [1232804] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:29:52 -0600] [1232806] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:29:52 -0600] [1232805] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:29:52 -0600] [1232807] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:29:52 -0600] [1232808] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:29:52 -0600] [1232806] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:29:52 -0600] [1232804] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:29:52 -0600] [1232805] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:29:52 -0600] [1232808] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:29:52 -0600] [1232807] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:29:58 -0600] [1232805] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:29:58 -0600] [1232806] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:29:58 -0600] [1232804] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:29:58 -0600] [1232807] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-26 23:29:58 -0600] [1232808] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 05:31:26 +0000] [1232799] [INFO] Handling signal: term
+[2024-03-26 23:31:26 -0600] [1232804] [INFO] Worker exiting (pid: 1232804)
+[2024-03-26 23:31:26 -0600] [1232805] [INFO] Worker exiting (pid: 1232805)
+[2024-03-26 23:31:26 -0600] [1232806] [INFO] Worker exiting (pid: 1232806)
+[2024-03-26 23:31:26 -0600] [1232807] [INFO] Worker exiting (pid: 1232807)
+[2024-03-26 23:31:26 -0600] [1232808] [INFO] Worker exiting (pid: 1232808)
+[2024-03-27 05:31:27 +0000] [1232799] [INFO] Shutting down: Master
+[2024-03-27 05:31:27 +0000] [1233060] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f19b4f77f40>
+  on_reload: <function OnReload.on_reload at 0x7f19b4f840d0>
+  when_ready: <function WhenReady.when_ready at 0x7f19b4f841f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f19b4f84310>
+  post_fork: <function Postfork.post_fork at 0x7f19b4f84430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f19b4f84550>
+  worker_int: <function WorkerInt.worker_int at 0x7f19b4f84670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f19b4f84790>
+  pre_exec: <function PreExec.pre_exec at 0x7f19b4f848b0>
+  pre_request: <function PreRequest.pre_request at 0x7f19b4f849d0>
+  post_request: <function PostRequest.post_request at 0x7f19b4f84a60>
+  child_exit: <function ChildExit.child_exit at 0x7f19b4f84b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f19b4f84ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f19b4f84dc0>
+  on_exit: <function OnExit.on_exit at 0x7f19b4f84ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:31:27 +0000] [1233060] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:31:27 +0000] [1233060] [DEBUG] Arbiter booted
+[2024-03-27 05:31:27 +0000] [1233060] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1233060)
+[2024-03-27 05:31:27 +0000] [1233060] [INFO] Using worker: sync
+[2024-03-27 05:31:27 +0000] [1233065] [INFO] Booting worker with pid: 1233065
+[2024-03-27 05:31:27 +0000] [1233066] [INFO] Booting worker with pid: 1233066
+[2024-03-27 05:31:27 +0000] [1233067] [INFO] Booting worker with pid: 1233067
+[2024-03-27 05:31:27 +0000] [1233068] [INFO] Booting worker with pid: 1233068
+[2024-03-27 05:31:27 +0000] [1233069] [INFO] Booting worker with pid: 1233069
+[2024-03-27 05:31:27 +0000] [1233060] [DEBUG] 5 workers
+[2024-03-26 23:31:57 -0600] [1233068] [DEBUG] GET /wp-content/plugins/gotmls/readme.txt
+[2024-03-26 23:32:23 -0600] [1233069] [DEBUG] GET /
+[2024-03-26 23:32:24 -0600] [1233067] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:32:24 -0600] [1233066] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:32:24 -0600] [1233065] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:32:24 -0600] [1233068] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:32:24 -0600] [1233069] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:32:24 -0600] [1233066] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:32:24 -0600] [1233069] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:32:24 -0600] [1233069] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:32:24 -0600] [1233068] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:32:24 -0600] [1233069] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:32:24 -0600] [1233068] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:32:24 -0600] [1233066] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:32:24 -0600] [1233067] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:32:24 -0600] [1233069] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:32:24 -0600] [1233065] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:32:24 -0600] [1233068] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-26 23:32:24 -0600] [1233068] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:32:24 -0600] [1233069] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:32:25 -0600] [1233069] [DEBUG] GET /
+[2024-03-26 23:32:25 -0600] [1233066] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:32:25 -0600] [1233067] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:32:25 -0600] [1233065] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:32:25 -0600] [1233068] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:32:25 -0600] [1233067] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:32:25 -0600] [1233065] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:32:25 -0600] [1233066] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:32:25 -0600] [1233068] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:32:25 -0600] [1233069] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:32:25 -0600] [1233068] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:32:25 -0600] [1233067] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:32:25 -0600] [1233066] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:32:26 -0600] [1233065] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:32:26 -0600] [1233069] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:32:26 -0600] [1233068] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:32:26 -0600] [1233067] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:32:26 -0600] [1233066] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:32:26 -0600] [1233069] [DEBUG] GET /
+[2024-03-26 23:32:26 -0600] [1233066] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:32:26 -0600] [1233068] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:32:26 -0600] [1233065] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:32:26 -0600] [1233067] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:32:26 -0600] [1233068] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:32:26 -0600] [1233066] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:32:26 -0600] [1233065] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:32:26 -0600] [1233067] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:32:26 -0600] [1233069] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:32:26 -0600] [1233067] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:32:26 -0600] [1233065] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:32:26 -0600] [1233069] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:32:26 -0600] [1233065] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:32:26 -0600] [1233066] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:32:26 -0600] [1233067] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:32:26 -0600] [1233068] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:32:26 -0600] [1233069] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:32:26 -0600] [1233067] [DEBUG] GET /
+[2024-03-26 23:32:26 -0600] [1233069] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:32:26 -0600] [1233065] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:32:26 -0600] [1233068] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:32:26 -0600] [1233066] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:32:26 -0600] [1233066] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:32:26 -0600] [1233065] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:32:26 -0600] [1233068] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:32:26 -0600] [1233069] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:32:26 -0600] [1233067] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:32:26 -0600] [1233066] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:32:26 -0600] [1233068] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:32:27 -0600] [1233069] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:32:27 -0600] [1233067] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:32:27 -0600] [1233068] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:32:27 -0600] [1233066] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:32:27 -0600] [1233065] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:32:27 -0600] [1233069] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 05:36:27 +0000] [1233060] [INFO] Handling signal: term
+[2024-03-26 23:36:27 -0600] [1233066] [INFO] Worker exiting (pid: 1233066)
+[2024-03-26 23:36:27 -0600] [1233067] [INFO] Worker exiting (pid: 1233067)
+[2024-03-26 23:36:27 -0600] [1233068] [INFO] Worker exiting (pid: 1233068)
+[2024-03-26 23:36:27 -0600] [1233069] [INFO] Worker exiting (pid: 1233069)
+[2024-03-26 23:36:27 -0600] [1233065] [INFO] Worker exiting (pid: 1233065)
+[2024-03-27 05:36:28 +0000] [1233060] [INFO] Shutting down: Master
+[2024-03-27 05:36:28 +0000] [1233366] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb5d8377f40>
+  on_reload: <function OnReload.on_reload at 0x7fb5d83840d0>
+  when_ready: <function WhenReady.when_ready at 0x7fb5d83841f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fb5d8384310>
+  post_fork: <function Postfork.post_fork at 0x7fb5d8384430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb5d8384550>
+  worker_int: <function WorkerInt.worker_int at 0x7fb5d8384670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb5d8384790>
+  pre_exec: <function PreExec.pre_exec at 0x7fb5d83848b0>
+  pre_request: <function PreRequest.pre_request at 0x7fb5d83849d0>
+  post_request: <function PostRequest.post_request at 0x7fb5d8384a60>
+  child_exit: <function ChildExit.child_exit at 0x7fb5d8384b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb5d8384ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb5d8384dc0>
+  on_exit: <function OnExit.on_exit at 0x7fb5d8384ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:36:28 +0000] [1233366] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:36:28 +0000] [1233366] [DEBUG] Arbiter booted
+[2024-03-27 05:36:28 +0000] [1233366] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1233366)
+[2024-03-27 05:36:28 +0000] [1233366] [INFO] Using worker: sync
+[2024-03-27 05:36:28 +0000] [1233371] [INFO] Booting worker with pid: 1233371
+[2024-03-27 05:36:28 +0000] [1233372] [INFO] Booting worker with pid: 1233372
+[2024-03-27 05:36:28 +0000] [1233373] [INFO] Booting worker with pid: 1233373
+[2024-03-27 05:36:28 +0000] [1233374] [INFO] Booting worker with pid: 1233374
+[2024-03-27 05:36:28 +0000] [1233375] [INFO] Booting worker with pid: 1233375
+[2024-03-27 05:36:29 +0000] [1233366] [DEBUG] 5 workers
+[2024-03-26 23:36:33 -0600] [1233374] [DEBUG] GET /
+[2024-03-26 23:36:33 -0600] [1233371] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:36:33 -0600] [1233375] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:36:33 -0600] [1233374] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:36:33 -0600] [1233373] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:36:33 -0600] [1233372] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:36:33 -0600] [1233375] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:36:33 -0600] [1233371] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:36:33 -0600] [1233374] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:36:33 -0600] [1233374] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:36:33 -0600] [1233373] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:36:33 -0600] [1233374] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:36:33 -0600] [1233372] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:36:33 -0600] [1233373] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 05:37:06 +0000] [1233366] [INFO] Handling signal: term
+[2024-03-26 23:37:06 -0600] [1233371] [INFO] Worker exiting (pid: 1233371)
+[2024-03-26 23:37:06 -0600] [1233372] [INFO] Worker exiting (pid: 1233372)
+[2024-03-26 23:37:06 -0600] [1233373] [INFO] Worker exiting (pid: 1233373)
+[2024-03-26 23:37:06 -0600] [1233374] [INFO] Worker exiting (pid: 1233374)
+[2024-03-26 23:37:06 -0600] [1233375] [INFO] Worker exiting (pid: 1233375)
+[2024-03-27 05:37:07 +0000] [1233366] [INFO] Shutting down: Master
+[2024-03-27 05:37:07 +0000] [1233403] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb9d2fdbf40>
+  on_reload: <function OnReload.on_reload at 0x7fb9d2fe80d0>
+  when_ready: <function WhenReady.when_ready at 0x7fb9d2fe81f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fb9d2fe8310>
+  post_fork: <function Postfork.post_fork at 0x7fb9d2fe8430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb9d2fe8550>
+  worker_int: <function WorkerInt.worker_int at 0x7fb9d2fe8670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb9d2fe8790>
+  pre_exec: <function PreExec.pre_exec at 0x7fb9d2fe88b0>
+  pre_request: <function PreRequest.pre_request at 0x7fb9d2fe89d0>
+  post_request: <function PostRequest.post_request at 0x7fb9d2fe8a60>
+  child_exit: <function ChildExit.child_exit at 0x7fb9d2fe8b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb9d2fe8ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb9d2fe8dc0>
+  on_exit: <function OnExit.on_exit at 0x7fb9d2fe8ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:37:07 +0000] [1233403] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:37:07 +0000] [1233403] [DEBUG] Arbiter booted
+[2024-03-27 05:37:07 +0000] [1233403] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1233403)
+[2024-03-27 05:37:07 +0000] [1233403] [INFO] Using worker: sync
+[2024-03-27 05:37:07 +0000] [1233408] [INFO] Booting worker with pid: 1233408
+[2024-03-27 05:37:07 +0000] [1233409] [INFO] Booting worker with pid: 1233409
+[2024-03-27 05:37:08 +0000] [1233411] [INFO] Booting worker with pid: 1233411
+[2024-03-27 05:37:08 +0000] [1233412] [INFO] Booting worker with pid: 1233412
+[2024-03-27 05:37:08 +0000] [1233403] [DEBUG] 5 workers
+[2024-03-27 05:37:08 +0000] [1233413] [INFO] Booting worker with pid: 1233413
+[2024-03-26 23:37:13 -0600] [1233412] [DEBUG] GET /
+[2024-03-26 23:37:13 -0600] [1233409] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:37:13 -0600] [1233411] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:37:13 -0600] [1233413] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:37:13 -0600] [1233408] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:37:13 -0600] [1233412] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:37:13 -0600] [1233412] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:37:14 -0600] [1233412] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:37:14 -0600] [1233413] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:37:14 -0600] [1233408] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:37:14 -0600] [1233413] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:37:14 -0600] [1233408] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:37:14 -0600] [1233413] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:37:14 -0600] [1233408] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:37:14 -0600] [1233411] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:37:14 -0600] [1233412] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:37:14 -0600] [1233413] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-26 23:37:14 -0600] [1233408] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:37:14 -0600] [1233413] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 05:38:56 +0000] [1233403] [INFO] Handling signal: term
+[2024-03-26 23:38:56 -0600] [1233409] [INFO] Worker exiting (pid: 1233409)
+[2024-03-26 23:38:56 -0600] [1233411] [INFO] Worker exiting (pid: 1233411)
+[2024-03-26 23:38:56 -0600] [1233412] [INFO] Worker exiting (pid: 1233412)
+[2024-03-26 23:38:56 -0600] [1233413] [INFO] Worker exiting (pid: 1233413)
+[2024-03-26 23:38:56 -0600] [1233408] [INFO] Worker exiting (pid: 1233408)
+[2024-03-27 05:38:57 +0000] [1233403] [INFO] Shutting down: Master
+[2024-03-27 05:38:57 +0000] [1233494] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fe752137f40>
+  on_reload: <function OnReload.on_reload at 0x7fe7521440d0>
+  when_ready: <function WhenReady.when_ready at 0x7fe7521441f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fe752144310>
+  post_fork: <function Postfork.post_fork at 0x7fe752144430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe752144550>
+  worker_int: <function WorkerInt.worker_int at 0x7fe752144670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe752144790>
+  pre_exec: <function PreExec.pre_exec at 0x7fe7521448b0>
+  pre_request: <function PreRequest.pre_request at 0x7fe7521449d0>
+  post_request: <function PostRequest.post_request at 0x7fe752144a60>
+  child_exit: <function ChildExit.child_exit at 0x7fe752144b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe752144ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe752144dc0>
+  on_exit: <function OnExit.on_exit at 0x7fe752144ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:38:57 +0000] [1233494] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:38:57 +0000] [1233494] [DEBUG] Arbiter booted
+[2024-03-27 05:38:57 +0000] [1233494] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1233494)
+[2024-03-27 05:38:57 +0000] [1233494] [INFO] Using worker: sync
+[2024-03-27 05:38:57 +0000] [1233499] [INFO] Booting worker with pid: 1233499
+[2024-03-27 05:38:57 +0000] [1233500] [INFO] Booting worker with pid: 1233500
+[2024-03-27 05:38:57 +0000] [1233501] [INFO] Booting worker with pid: 1233501
+[2024-03-27 05:38:57 +0000] [1233502] [INFO] Booting worker with pid: 1233502
+[2024-03-27 05:38:57 +0000] [1233503] [INFO] Booting worker with pid: 1233503
+[2024-03-27 05:38:57 +0000] [1233494] [DEBUG] 5 workers
+[2024-03-26 23:39:01 -0600] [1233502] [DEBUG] GET /
+[2024-03-26 23:39:02 -0600] [1233501] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:39:02 -0600] [1233503] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:39:02 -0600] [1233502] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:39:02 -0600] [1233503] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:39:02 -0600] [1233501] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:39:02 -0600] [1233500] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:39:02 -0600] [1233499] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:39:02 -0600] [1233501] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:39:02 -0600] [1233502] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:39:02 -0600] [1233501] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:39:02 -0600] [1233500] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:39:02 -0600] [1233502] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:39:02 -0600] [1233499] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:39:02 -0600] [1233501] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:39:02 -0600] [1233501] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:39:02 -0600] [1233499] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-26 23:39:02 -0600] [1233502] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:39:02 -0600] [1233499] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:40:15 -0600] [1233499] [DEBUG] GET /
+[2024-03-26 23:40:15 -0600] [1233503] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:40:15 -0600] [1233501] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:40:15 -0600] [1233500] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:40:15 -0600] [1233502] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:40:15 -0600] [1233501] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:40:15 -0600] [1233503] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:40:15 -0600] [1233500] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:40:15 -0600] [1233502] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:40:15 -0600] [1233499] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:40:15 -0600] [1233501] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:40:15 -0600] [1233502] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:40:15 -0600] [1233500] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:40:15 -0600] [1233501] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:40:16 -0600] [1233499] [DEBUG] GET /
+[2024-03-26 23:40:16 -0600] [1233500] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:40:16 -0600] [1233501] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:40:16 -0600] [1233503] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:40:16 -0600] [1233502] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:40:16 -0600] [1233501] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:40:16 -0600] [1233503] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:40:16 -0600] [1233500] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:40:16 -0600] [1233502] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:40:16 -0600] [1233499] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:40:16 -0600] [1233502] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:40:16 -0600] [1233499] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:40:16 -0600] [1233500] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:40:16 -0600] [1233499] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:40:19 -0600] [1233502] [DEBUG] GET /
+[2024-03-26 23:40:19 -0600] [1233501] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:40:19 -0600] [1233503] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:40:19 -0600] [1233502] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:40:19 -0600] [1233499] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:40:24 -0600] [1233502] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:40:24 -0600] [1233501] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:40:24 -0600] [1233499] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:40:24 -0600] [1233503] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-26 23:40:24 -0600] [1233500] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 05:41:43 +0000] [1233494] [INFO] Handling signal: term
+[2024-03-26 23:41:43 -0600] [1233499] [INFO] Worker exiting (pid: 1233499)
+[2024-03-26 23:41:43 -0600] [1233500] [INFO] Worker exiting (pid: 1233500)
+[2024-03-26 23:41:43 -0600] [1233501] [INFO] Worker exiting (pid: 1233501)
+[2024-03-26 23:41:43 -0600] [1233502] [INFO] Worker exiting (pid: 1233502)
+[2024-03-26 23:41:43 -0600] [1233503] [INFO] Worker exiting (pid: 1233503)
+[2024-03-27 05:41:44 +0000] [1233494] [INFO] Shutting down: Master
+[2024-03-27 05:41:44 +0000] [1233602] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb5cbe3bf40>
+  on_reload: <function OnReload.on_reload at 0x7fb5cbe480d0>
+  when_ready: <function WhenReady.when_ready at 0x7fb5cbe481f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fb5cbe48310>
+  post_fork: <function Postfork.post_fork at 0x7fb5cbe48430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb5cbe48550>
+  worker_int: <function WorkerInt.worker_int at 0x7fb5cbe48670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb5cbe48790>
+  pre_exec: <function PreExec.pre_exec at 0x7fb5cbe488b0>
+  pre_request: <function PreRequest.pre_request at 0x7fb5cbe489d0>
+  post_request: <function PostRequest.post_request at 0x7fb5cbe48a60>
+  child_exit: <function ChildExit.child_exit at 0x7fb5cbe48b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb5cbe48ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb5cbe48dc0>
+  on_exit: <function OnExit.on_exit at 0x7fb5cbe48ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 05:41:44 +0000] [1233602] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 05:41:44 +0000] [1233602] [DEBUG] Arbiter booted
+[2024-03-27 05:41:44 +0000] [1233602] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1233602)
+[2024-03-27 05:41:44 +0000] [1233602] [INFO] Using worker: sync
+[2024-03-27 05:41:44 +0000] [1233607] [INFO] Booting worker with pid: 1233607
+[2024-03-27 05:41:44 +0000] [1233608] [INFO] Booting worker with pid: 1233608
+[2024-03-27 05:41:44 +0000] [1233609] [INFO] Booting worker with pid: 1233609
+[2024-03-27 05:41:44 +0000] [1233610] [INFO] Booting worker with pid: 1233610
+[2024-03-27 05:41:44 +0000] [1233611] [INFO] Booting worker with pid: 1233611
+[2024-03-27 05:41:45 +0000] [1233602] [DEBUG] 5 workers
+[2024-03-26 23:41:56 -0600] [1233610] [DEBUG] GET /
+[2024-03-26 23:41:56 -0600] [1233607] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:41:56 -0600] [1233611] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:41:56 -0600] [1233609] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:41:56 -0600] [1233607] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:41:56 -0600] [1233611] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:41:56 -0600] [1233610] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:41:56 -0600] [1233608] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:41:56 -0600] [1233610] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:41:56 -0600] [1233611] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:41:56 -0600] [1233610] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:41:56 -0600] [1233611] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:41:56 -0600] [1233608] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:41:56 -0600] [1233611] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:41:56 -0600] [1233610] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:41:56 -0600] [1233609] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:41:56 -0600] [1233607] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:41:56 -0600] [1233608] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-26 23:41:56 -0600] [1233610] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:41:57 -0600] [1233608] [DEBUG] GET /
+[2024-03-26 23:41:57 -0600] [1233609] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:41:57 -0600] [1233607] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:41:57 -0600] [1233610] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:41:57 -0600] [1233611] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:41:57 -0600] [1233611] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:41:57 -0600] [1233610] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:41:57 -0600] [1233607] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:41:57 -0600] [1233609] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:41:57 -0600] [1233608] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:41:57 -0600] [1233609] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:41:57 -0600] [1233607] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:41:57 -0600] [1233608] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:41:57 -0600] [1233611] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:41:57 -0600] [1233607] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:41:57 -0600] [1233610] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:41:57 -0600] [1233609] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:41:57 -0600] [1233608] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-26 23:41:57 -0600] [1233607] [DEBUG] GET /
+[2024-03-26 23:41:57 -0600] [1233609] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-26 23:41:57 -0600] [1233611] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-26 23:41:57 -0600] [1233610] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-26 23:41:57 -0600] [1233608] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-26 23:41:57 -0600] [1233611] [DEBUG] GET /static/css/estilos.css
+[2024-03-26 23:41:57 -0600] [1233609] [DEBUG] GET /static/js/popper.min.js
+[2024-03-26 23:41:58 -0600] [1233610] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-26 23:41:58 -0600] [1233608] [DEBUG] GET /static/js/funciones.js
+[2024-03-26 23:41:58 -0600] [1233607] [DEBUG] GET /static/img/logo.png
+[2024-03-26 23:41:58 -0600] [1233608] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-26 23:41:58 -0600] [1233607] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-26 23:41:58 -0600] [1233610] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-26 23:41:58 -0600] [1233607] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-26 23:41:58 -0600] [1233611] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-26 23:41:58 -0600] [1233608] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-26 23:41:58 -0600] [1233610] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-26 23:41:58 -0600] [1233607] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 06:00:07 +0000] [1233602] [INFO] Handling signal: term
+[2024-03-27 00:00:07 -0600] [1233609] [INFO] Worker exiting (pid: 1233609)
+[2024-03-27 00:00:07 -0600] [1233610] [INFO] Worker exiting (pid: 1233610)
+[2024-03-27 00:00:07 -0600] [1233611] [INFO] Worker exiting (pid: 1233611)
+[2024-03-27 00:00:07 -0600] [1233608] [INFO] Worker exiting (pid: 1233608)
+[2024-03-27 00:00:07 -0600] [1233607] [INFO] Worker exiting (pid: 1233607)
+[2024-03-27 06:00:08 +0000] [1233602] [INFO] Shutting down: Master
+[2024-03-27 06:00:09 +0000] [1234492] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4746fbff40>
+  on_reload: <function OnReload.on_reload at 0x7f4746fcc0d0>
+  when_ready: <function WhenReady.when_ready at 0x7f4746fcc1f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f4746fcc310>
+  post_fork: <function Postfork.post_fork at 0x7f4746fcc430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4746fcc550>
+  worker_int: <function WorkerInt.worker_int at 0x7f4746fcc670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4746fcc790>
+  pre_exec: <function PreExec.pre_exec at 0x7f4746fcc8b0>
+  pre_request: <function PreRequest.pre_request at 0x7f4746fcc9d0>
+  post_request: <function PostRequest.post_request at 0x7f4746fcca60>
+  child_exit: <function ChildExit.child_exit at 0x7f4746fccb80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4746fccca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4746fccdc0>
+  on_exit: <function OnExit.on_exit at 0x7f4746fccee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:00:09 +0000] [1234492] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:00:09 +0000] [1234492] [DEBUG] Arbiter booted
+[2024-03-27 06:00:09 +0000] [1234492] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1234492)
+[2024-03-27 06:00:09 +0000] [1234492] [INFO] Using worker: sync
+[2024-03-27 06:00:09 +0000] [1234497] [INFO] Booting worker with pid: 1234497
+[2024-03-27 06:00:09 +0000] [1234498] [INFO] Booting worker with pid: 1234498
+[2024-03-27 06:00:09 +0000] [1234499] [INFO] Booting worker with pid: 1234499
+[2024-03-27 06:00:09 +0000] [1234500] [INFO] Booting worker with pid: 1234500
+[2024-03-27 06:00:09 +0000] [1234501] [INFO] Booting worker with pid: 1234501
+[2024-03-27 06:00:09 +0000] [1234492] [DEBUG] 5 workers
+[2024-03-27 00:00:16 -0600] [1234500] [DEBUG] GET /
+[2024-03-27 00:00:16 -0600] [1234499] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:00:16 -0600] [1234501] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:00:17 -0600] [1234500] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:00:17 -0600] [1234501] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:00:17 -0600] [1234497] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:00:17 -0600] [1234499] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:00:17 -0600] [1234498] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:00:17 -0600] [1234500] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:00:17 -0600] [1234501] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:00:17 -0600] [1234499] [DEBUG] GET /static/img/logo.png
+[2024-03-27 00:00:17 -0600] [1234500] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-27 00:00:17 -0600] [1234501] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:00:17 -0600] [1234497] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:00:17 -0600] [1234501] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-27 00:00:17 -0600] [1234500] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-27 00:00:17 -0600] [1234499] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:00:17 -0600] [1234497] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:00:17 -0600] [1234501] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 06:04:00 +0000] [1234492] [INFO] Handling signal: term
+[2024-03-27 00:04:00 -0600] [1234497] [INFO] Worker exiting (pid: 1234497)
+[2024-03-27 00:04:00 -0600] [1234498] [INFO] Worker exiting (pid: 1234498)
+[2024-03-27 00:04:00 -0600] [1234499] [INFO] Worker exiting (pid: 1234499)
+[2024-03-27 00:04:00 -0600] [1234501] [INFO] Worker exiting (pid: 1234501)
+[2024-03-27 00:04:00 -0600] [1234500] [INFO] Worker exiting (pid: 1234500)
+[2024-03-27 06:04:01 +0000] [1234492] [INFO] Shutting down: Master
+[2024-03-27 06:04:01 +0000] [1234679] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fbfc7b2bf40>
+  on_reload: <function OnReload.on_reload at 0x7fbfc7b380d0>
+  when_ready: <function WhenReady.when_ready at 0x7fbfc7b381f0>
+  pre_fork: <function Prefork.pre_fork at 0x7fbfc7b38310>
+  post_fork: <function Postfork.post_fork at 0x7fbfc7b38430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fbfc7b38550>
+  worker_int: <function WorkerInt.worker_int at 0x7fbfc7b38670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fbfc7b38790>
+  pre_exec: <function PreExec.pre_exec at 0x7fbfc7b388b0>
+  pre_request: <function PreRequest.pre_request at 0x7fbfc7b389d0>
+  post_request: <function PostRequest.post_request at 0x7fbfc7b38a60>
+  child_exit: <function ChildExit.child_exit at 0x7fbfc7b38b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fbfc7b38ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fbfc7b38dc0>
+  on_exit: <function OnExit.on_exit at 0x7fbfc7b38ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:04:01 +0000] [1234679] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:04:01 +0000] [1234679] [DEBUG] Arbiter booted
+[2024-03-27 06:04:01 +0000] [1234679] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1234679)
+[2024-03-27 06:04:01 +0000] [1234679] [INFO] Using worker: sync
+[2024-03-27 06:04:01 +0000] [1234684] [INFO] Booting worker with pid: 1234684
+[2024-03-27 06:04:02 +0000] [1234685] [INFO] Booting worker with pid: 1234685
+[2024-03-27 06:04:02 +0000] [1234686] [INFO] Booting worker with pid: 1234686
+[2024-03-27 06:04:02 +0000] [1234687] [INFO] Booting worker with pid: 1234687
+[2024-03-27 06:04:02 +0000] [1234688] [INFO] Booting worker with pid: 1234688
+[2024-03-27 06:04:02 +0000] [1234679] [DEBUG] 5 workers
+[2024-03-27 00:04:08 -0600] [1234687] [DEBUG] GET /
+[2024-03-27 00:04:08 -0600] [1234686] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:04:08 -0600] [1234688] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:04:08 -0600] [1234687] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:04:08 -0600] [1234688] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:04:08 -0600] [1234684] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:04:08 -0600] [1234685] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:04:08 -0600] [1234686] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:04:09 -0600] [1234688] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:04:09 -0600] [1234687] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:04:09 -0600] [1234686] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:04:09 -0600] [1234688] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:04:09 -0600] [1234687] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:04:09 -0600] [1234684] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:04:09 -0600] [1234687] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:04:09 -0600] [1234686] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:04:09 -0600] [1234685] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:04:09 -0600] [1234686] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:04:09 -0600] [1234687] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:06:54 -0600] [1234687] [DEBUG] HEAD /wordpress
+[2024-03-27 00:06:54 -0600] [1234687] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:54 -0600] [1234686] [DEBUG] HEAD /
+[2024-03-27 00:06:54 -0600] [1234686] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:54 -0600] [1234685] [DEBUG] HEAD /wp
+[2024-03-27 00:06:54 -0600] [1234685] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:55 -0600] [1234686] [DEBUG] HEAD /bc
+[2024-03-27 00:06:55 -0600] [1234686] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:55 -0600] [1234688] [DEBUG] HEAD /bk
+[2024-03-27 00:06:55 -0600] [1234688] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:55 -0600] [1234686] [DEBUG] HEAD /backup
+[2024-03-27 00:06:55 -0600] [1234686] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:55 -0600] [1234688] [DEBUG] HEAD /old
+[2024-03-27 00:06:55 -0600] [1234688] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:55 -0600] [1234685] [DEBUG] HEAD /new
+[2024-03-27 00:06:55 -0600] [1234685] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:55 -0600] [1234688] [DEBUG] HEAD /main
+[2024-03-27 00:06:55 -0600] [1234688] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:06:56 -0600] [1234686] [DEBUG] HEAD /home
+[2024-03-27 00:06:56 -0600] [1234686] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:08:32 -0600] [1234686] [DEBUG] GET /
+[2024-03-27 00:08:32 -0600] [1234684] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:08:32 -0600] [1234688] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:08:32 -0600] [1234687] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:08:32 -0600] [1234685] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:08:32 -0600] [1234684] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:08:32 -0600] [1234688] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:08:32 -0600] [1234685] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:08:32 -0600] [1234687] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:08:32 -0600] [1234686] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:08:32 -0600] [1234685] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:08:32 -0600] [1234686] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:08:32 -0600] [1234684] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:08:32 -0600] [1234688] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:08:32 -0600] [1234685] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:08:32 -0600] [1234684] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:08:32 -0600] [1234686] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:08:32 -0600] [1234688] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:08:32 -0600] [1234684] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /
+[2024-03-27 00:08:33 -0600] [1234685] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:08:33 -0600] [1234684] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:08:33 -0600] [1234686] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:08:33 -0600] [1234688] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:08:33 -0600] [1234685] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:08:33 -0600] [1234684] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:08:33 -0600] [1234686] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:08:33 -0600] [1234688] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:08:33 -0600] [1234684] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:08:33 -0600] [1234686] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:08:33 -0600] [1234684] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:08:33 -0600] [1234688] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:08:33 -0600] [1234685] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:08:33 -0600] [1234685] [DEBUG] GET /
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:08:33 -0600] [1234686] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:08:33 -0600] [1234688] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:08:33 -0600] [1234684] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:08:33 -0600] [1234684] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:08:33 -0600] [1234688] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:08:33 -0600] [1234686] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:08:33 -0600] [1234685] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:08:33 -0600] [1234684] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:08:33 -0600] [1234686] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:08:33 -0600] [1234687] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:08:33 -0600] [1234688] [DEBUG] GET /
+[2024-03-27 00:08:34 -0600] [1234686] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:08:34 -0600] [1234684] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:08:34 -0600] [1234687] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:08:34 -0600] [1234688] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:08:34 -0600] [1234685] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:08:34 -0600] [1234686] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:08:34 -0600] [1234687] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:08:34 -0600] [1234686] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:08:34 -0600] [1234685] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:08:34 -0600] [1234684] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:08:34 -0600] [1234688] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:08:34 -0600] [1234687] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:08:34 -0600] [1234685] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:08:34 -0600] [1234688] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:08:34 -0600] [1234687] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:08:34 -0600] [1234685] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:08:34 -0600] [1234688] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:08:34 -0600] [1234686] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:08:34 -0600] [1234684] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:08:34 -0600] [1234687] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:08:34 -0600] [1234686] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 06:28:20 +0000] [1234679] [INFO] Handling signal: term
+[2024-03-27 00:28:20 -0600] [1234684] [INFO] Worker exiting (pid: 1234684)
+[2024-03-27 00:28:20 -0600] [1234686] [INFO] Worker exiting (pid: 1234686)
+[2024-03-27 00:28:20 -0600] [1234687] [INFO] Worker exiting (pid: 1234687)
+[2024-03-27 00:28:20 -0600] [1234688] [INFO] Worker exiting (pid: 1234688)
+[2024-03-27 00:28:20 -0600] [1234685] [INFO] Worker exiting (pid: 1234685)
+[2024-03-27 06:28:21 +0000] [1234679] [INFO] Shutting down: Master
+[2024-03-27 06:28:22 +0000] [1235688] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f55ae16ff40>
+  on_reload: <function OnReload.on_reload at 0x7f55ae17c0d0>
+  when_ready: <function WhenReady.when_ready at 0x7f55ae17c1f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f55ae17c310>
+  post_fork: <function Postfork.post_fork at 0x7f55ae17c430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f55ae17c550>
+  worker_int: <function WorkerInt.worker_int at 0x7f55ae17c670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f55ae17c790>
+  pre_exec: <function PreExec.pre_exec at 0x7f55ae17c8b0>
+  pre_request: <function PreRequest.pre_request at 0x7f55ae17c9d0>
+  post_request: <function PostRequest.post_request at 0x7f55ae17ca60>
+  child_exit: <function ChildExit.child_exit at 0x7f55ae17cb80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f55ae17cca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f55ae17cdc0>
+  on_exit: <function OnExit.on_exit at 0x7f55ae17cee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:28:22 +0000] [1235688] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:28:22 +0000] [1235688] [DEBUG] Arbiter booted
+[2024-03-27 06:28:22 +0000] [1235688] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1235688)
+[2024-03-27 06:28:22 +0000] [1235688] [INFO] Using worker: sync
+[2024-03-27 06:28:22 +0000] [1235693] [INFO] Booting worker with pid: 1235693
+[2024-03-27 06:28:22 +0000] [1235694] [INFO] Booting worker with pid: 1235694
+[2024-03-27 06:28:22 +0000] [1235695] [INFO] Booting worker with pid: 1235695
+[2024-03-27 06:28:22 +0000] [1235696] [INFO] Booting worker with pid: 1235696
+[2024-03-27 06:28:22 +0000] [1235697] [INFO] Booting worker with pid: 1235697
+[2024-03-27 06:28:22 +0000] [1235688] [DEBUG] 5 workers
+[2024-03-27 00:28:26 -0600] [1235696] [DEBUG] GET /
+[2024-03-27 00:28:26 -0600] [1235695] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:28:26 -0600] [1235697] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:28:26 -0600] [1235696] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:28:26 -0600] [1235693] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:28:26 -0600] [1235694] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:28:26 -0600] [1235697] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:28:26 -0600] [1235695] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:28:27 -0600] [1235697] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:28:27 -0600] [1235695] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:28:27 -0600] [1235696] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:28:27 -0600] [1235695] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:28:27 -0600] [1235694] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:28:27 -0600] [1235697] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:28:27 -0600] [1235693] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:28:27 -0600] [1235696] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:28:27 -0600] [1235696] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:28:27 -0600] [1235697] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:28:27 -0600] [1235696] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:28:28 -0600] [1235695] [DEBUG] GET /
+[2024-03-27 00:28:28 -0600] [1235694] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:28:28 -0600] [1235697] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:28:28 -0600] [1235693] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:28:28 -0600] [1235696] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:28:28 -0600] [1235696] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:28:28 -0600] [1235697] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:28:28 -0600] [1235693] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:28:28 -0600] [1235694] [DEBUG] GET /
+[2024-03-27 00:28:28 -0600] [1235693] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:28:28 -0600] [1235696] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:28:28 -0600] [1235695] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:28:28 -0600] [1235693] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:28:29 -0600] [1235697] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /
+[2024-03-27 00:28:29 -0600] [1235697] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:28:29 -0600] [1235696] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:28:29 -0600] [1235693] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:28:29 -0600] [1235695] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:28:29 -0600] [1235697] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:28:29 -0600] [1235696] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:28:29 -0600] [1235693] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:28:29 -0600] [1235695] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:28:29 -0600] [1235697] [DEBUG] GET /
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:28:29 -0600] [1235696] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:28:29 -0600] [1235693] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:28:29 -0600] [1235695] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:28:29 -0600] [1235695] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:28:29 -0600] [1235693] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:28:29 -0600] [1235696] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:28:29 -0600] [1235697] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:28:29 -0600] [1235695] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:28:29 -0600] [1235693] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:28:29 -0600] [1235697] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:28:29 -0600] [1235697] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:28:29 -0600] [1235693] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:28:29 -0600] [1235694] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:28:29 -0600] [1235695] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:28:29 -0600] [1235696] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:28:29 -0600] [1235693] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 06:29:59 +0000] [1235688] [INFO] Handling signal: term
+[2024-03-27 00:29:59 -0600] [1235693] [INFO] Worker exiting (pid: 1235693)
+[2024-03-27 00:29:59 -0600] [1235695] [INFO] Worker exiting (pid: 1235695)
+[2024-03-27 00:29:59 -0600] [1235696] [INFO] Worker exiting (pid: 1235696)
+[2024-03-27 00:29:59 -0600] [1235697] [INFO] Worker exiting (pid: 1235697)
+[2024-03-27 00:29:59 -0600] [1235694] [INFO] Worker exiting (pid: 1235694)
+[2024-03-27 06:30:00 +0000] [1235688] [INFO] Shutting down: Master
+[2024-03-27 06:30:01 +0000] [1235739] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f716661ff40>
+  on_reload: <function OnReload.on_reload at 0x7f716662c0d0>
+  when_ready: <function WhenReady.when_ready at 0x7f716662c1f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f716662c310>
+  post_fork: <function Postfork.post_fork at 0x7f716662c430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f716662c550>
+  worker_int: <function WorkerInt.worker_int at 0x7f716662c670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f716662c790>
+  pre_exec: <function PreExec.pre_exec at 0x7f716662c8b0>
+  pre_request: <function PreRequest.pre_request at 0x7f716662c9d0>
+  post_request: <function PostRequest.post_request at 0x7f716662ca60>
+  child_exit: <function ChildExit.child_exit at 0x7f716662cb80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f716662cca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f716662cdc0>
+  on_exit: <function OnExit.on_exit at 0x7f716662cee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:30:01 +0000] [1235739] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:30:01 +0000] [1235739] [DEBUG] Arbiter booted
+[2024-03-27 06:30:01 +0000] [1235739] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1235739)
+[2024-03-27 06:30:01 +0000] [1235739] [INFO] Using worker: sync
+[2024-03-27 06:30:01 +0000] [1235744] [INFO] Booting worker with pid: 1235744
+[2024-03-27 06:30:01 +0000] [1235745] [INFO] Booting worker with pid: 1235745
+[2024-03-27 06:30:01 +0000] [1235746] [INFO] Booting worker with pid: 1235746
+[2024-03-27 06:30:01 +0000] [1235747] [INFO] Booting worker with pid: 1235747
+[2024-03-27 06:30:01 +0000] [1235748] [INFO] Booting worker with pid: 1235748
+[2024-03-27 06:30:01 +0000] [1235739] [DEBUG] 5 workers
+[2024-03-27 00:30:13 -0600] [1235748] [DEBUG] GET /
+[2024-03-27 00:30:13 -0600] [1235747] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:30:13 -0600] [1235748] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:30:13 -0600] [1235748] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:30:13 -0600] [1235745] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:30:13 -0600] [1235746] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:30:14 -0600] [1235748] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:30:14 -0600] [1235747] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:30:14 -0600] [1235744] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:30:14 -0600] [1235746] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:30:14 -0600] [1235747] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:30:14 -0600] [1235748] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:30:14 -0600] [1235745] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:30:14 -0600] [1235744] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:30:14 -0600] [1235745] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:30:14 -0600] [1235746] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:30:14 -0600] [1235747] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:30:14 -0600] [1235748] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:30:14 -0600] [1235745] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:30:14 -0600] [1235746] [DEBUG] GET /
+[2024-03-27 00:30:14 -0600] [1235744] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:30:14 -0600] [1235747] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:30:14 -0600] [1235745] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:30:14 -0600] [1235748] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:30:14 -0600] [1235748] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:30:14 -0600] [1235747] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:30:14 -0600] [1235745] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:30:14 -0600] [1235746] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:30:14 -0600] [1235744] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:30:14 -0600] [1235746] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:30:15 -0600] [1235748] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:30:15 -0600] [1235745] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:30:15 -0600] [1235748] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:30:15 -0600] [1235748] [DEBUG] GET /
+[2024-03-27 00:30:15 -0600] [1235745] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:30:15 -0600] [1235745] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:30:15 -0600] [1235748] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:30:15 -0600] [1235745] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:30:15 -0600] [1235748] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:30:15 -0600] [1235745] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:30:15 -0600] [1235748] [DEBUG] GET /
+[2024-03-27 00:30:15 -0600] [1235745] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:30:15 -0600] [1235745] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:30:15 -0600] [1235746] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:30:15 -0600] [1235748] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:30:15 -0600] [1235744] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:30:15 -0600] [1235747] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:30:16 -0600] [1235748] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:30:16 -0600] [1235744] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:30:16 -0600] [1235746] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:30:16 -0600] [1235745] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:30:16 -0600] [1235747] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:30:16 -0600] [1235747] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:30:16 -0600] [1235746] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 06:32:04 +0000] [1235739] [INFO] Handling signal: term
+[2024-03-27 00:32:04 -0600] [1235744] [INFO] Worker exiting (pid: 1235744)
+[2024-03-27 00:32:04 -0600] [1235745] [INFO] Worker exiting (pid: 1235745)
+[2024-03-27 00:32:04 -0600] [1235746] [INFO] Worker exiting (pid: 1235746)
+[2024-03-27 00:32:04 -0600] [1235747] [INFO] Worker exiting (pid: 1235747)
+[2024-03-27 00:32:04 -0600] [1235748] [INFO] Worker exiting (pid: 1235748)
+[2024-03-27 06:32:05 +0000] [1235739] [INFO] Shutting down: Master
+[2024-03-27 06:32:05 +0000] [1235819] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f04d4237f40>
+  on_reload: <function OnReload.on_reload at 0x7f04d42440d0>
+  when_ready: <function WhenReady.when_ready at 0x7f04d42441f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f04d4244310>
+  post_fork: <function Postfork.post_fork at 0x7f04d4244430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f04d4244550>
+  worker_int: <function WorkerInt.worker_int at 0x7f04d4244670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f04d4244790>
+  pre_exec: <function PreExec.pre_exec at 0x7f04d42448b0>
+  pre_request: <function PreRequest.pre_request at 0x7f04d42449d0>
+  post_request: <function PostRequest.post_request at 0x7f04d4244a60>
+  child_exit: <function ChildExit.child_exit at 0x7f04d4244b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f04d4244ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f04d4244dc0>
+  on_exit: <function OnExit.on_exit at 0x7f04d4244ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:32:05 +0000] [1235819] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:32:05 +0000] [1235819] [DEBUG] Arbiter booted
+[2024-03-27 06:32:05 +0000] [1235819] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1235819)
+[2024-03-27 06:32:05 +0000] [1235819] [INFO] Using worker: sync
+[2024-03-27 06:32:05 +0000] [1235824] [INFO] Booting worker with pid: 1235824
+[2024-03-27 06:32:05 +0000] [1235825] [INFO] Booting worker with pid: 1235825
+[2024-03-27 06:32:05 +0000] [1235826] [INFO] Booting worker with pid: 1235826
+[2024-03-27 06:32:05 +0000] [1235827] [INFO] Booting worker with pid: 1235827
+[2024-03-27 06:32:05 +0000] [1235819] [DEBUG] 5 workers
+[2024-03-27 06:32:05 +0000] [1235828] [INFO] Booting worker with pid: 1235828
+[2024-03-27 00:32:08 -0600] [1235827] [DEBUG] GET /
+[2024-03-27 00:32:09 -0600] [1235825] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:32:09 -0600] [1235828] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:32:09 -0600] [1235827] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:32:09 -0600] [1235826] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:32:09 -0600] [1235824] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:32:09 -0600] [1235825] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:32:09 -0600] [1235828] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:32:09 -0600] [1235828] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:32:09 -0600] [1235827] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:32:09 -0600] [1235825] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:32:09 -0600] [1235828] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:32:09 -0600] [1235827] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:32:09 -0600] [1235824] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:32:09 -0600] [1235826] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:32:09 -0600] [1235825] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:32:09 -0600] [1235827] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:32:09 -0600] [1235825] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:32:09 -0600] [1235826] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 00:32:10 -0600] [1235827] [DEBUG] GET /
+[2024-03-27 00:32:10 -0600] [1235828] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:32:10 -0600] [1235824] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:32:10 -0600] [1235826] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:32:10 -0600] [1235825] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:32:10 -0600] [1235824] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:32:10 -0600] [1235828] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:32:10 -0600] [1235825] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:32:10 -0600] [1235826] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:32:10 -0600] [1235827] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:32:10 -0600] [1235825] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:32:10 -0600] [1235828] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:32:10 -0600] [1235825] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:32:10 -0600] [1235828] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:32:10 -0600] [1235827] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:32:10 -0600] [1235825] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:32:10 -0600] [1235826] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:32:10 -0600] [1235824] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:32:10 -0600] [1235828] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 06:33:15 +0000] [1235819] [INFO] Handling signal: term
+[2024-03-27 00:33:15 -0600] [1235824] [INFO] Worker exiting (pid: 1235824)
+[2024-03-27 00:33:15 -0600] [1235825] [INFO] Worker exiting (pid: 1235825)
+[2024-03-27 00:33:15 -0600] [1235826] [INFO] Worker exiting (pid: 1235826)
+[2024-03-27 00:33:15 -0600] [1235827] [INFO] Worker exiting (pid: 1235827)
+[2024-03-27 00:33:15 -0600] [1235828] [INFO] Worker exiting (pid: 1235828)
+[2024-03-27 06:33:16 +0000] [1235819] [INFO] Shutting down: Master
+[2024-03-27 06:33:16 +0000] [1235870] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f60b030ff40>
+  on_reload: <function OnReload.on_reload at 0x7f60b031c0d0>
+  when_ready: <function WhenReady.when_ready at 0x7f60b031c1f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f60b031c310>
+  post_fork: <function Postfork.post_fork at 0x7f60b031c430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f60b031c550>
+  worker_int: <function WorkerInt.worker_int at 0x7f60b031c670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f60b031c790>
+  pre_exec: <function PreExec.pre_exec at 0x7f60b031c8b0>
+  pre_request: <function PreRequest.pre_request at 0x7f60b031c9d0>
+  post_request: <function PostRequest.post_request at 0x7f60b031ca60>
+  child_exit: <function ChildExit.child_exit at 0x7f60b031cb80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f60b031cca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f60b031cdc0>
+  on_exit: <function OnExit.on_exit at 0x7f60b031cee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:33:16 +0000] [1235870] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:33:16 +0000] [1235870] [DEBUG] Arbiter booted
+[2024-03-27 06:33:16 +0000] [1235870] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1235870)
+[2024-03-27 06:33:16 +0000] [1235870] [INFO] Using worker: sync
+[2024-03-27 06:33:16 +0000] [1235876] [INFO] Booting worker with pid: 1235876
+[2024-03-27 06:33:16 +0000] [1235877] [INFO] Booting worker with pid: 1235877
+[2024-03-27 06:33:16 +0000] [1235878] [INFO] Booting worker with pid: 1235878
+[2024-03-27 06:33:16 +0000] [1235879] [INFO] Booting worker with pid: 1235879
+[2024-03-27 06:33:16 +0000] [1235870] [DEBUG] 5 workers
+[2024-03-27 06:33:16 +0000] [1235880] [INFO] Booting worker with pid: 1235880
+[2024-03-27 00:33:20 -0600] [1235879] [DEBUG] GET /
+[2024-03-27 00:33:20 -0600] [1235877] [DEBUG] GET /static/js/jquery-3.3.1.min.js
+[2024-03-27 00:33:20 -0600] [1235878] [DEBUG] GET /static/js/bootstrap.bundle.min.js
+[2024-03-27 00:33:20 -0600] [1235876] [DEBUG] GET /static/css/bootstrap.min.css
+[2024-03-27 00:33:20 -0600] [1235880] [DEBUG] GET /static/css/estilos.css
+[2024-03-27 00:33:20 -0600] [1235879] [DEBUG] GET /static/js/jquery.min.js
+[2024-03-27 00:33:20 -0600] [1235879] [DEBUG] GET /static/js/popper.min.js
+[2024-03-27 00:33:20 -0600] [1235879] [DEBUG] GET /static/js/bootstrap.min.js
+[2024-03-27 00:33:20 -0600] [1235880] [DEBUG] GET /static/js/funciones.js
+[2024-03-27 00:33:20 -0600] [1235879] [DEBUG] GET /static/css/estilos.css.map
+[2024-03-27 00:33:20 -0600] [1235878] [DEBUG] GET /static/img/logo.png
+[2024-03-27 00:33:20 -0600] [1235879] [DEBUG] GET /static/img/principal/imagen1.png
+[2024-03-27 00:33:20 -0600] [1235880] [DEBUG] GET /static/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:33:21 -0600] [1235878] [DEBUG] GET /static/img/principal/imagen2.png
+[2024-03-27 00:33:21 -0600] [1235876] [DEBUG] GET /static/img/principal/imagen3.png
+[2024-03-27 00:33:21 -0600] [1235879] [DEBUG] GET /static/js/bootstrap.min.js.map
+[2024-03-27 00:33:21 -0600] [1235877] [DEBUG] GET /static/js/popper.min.js.map
+[2024-03-27 00:33:21 -0600] [1235880] [DEBUG] GET /static/css/bootstrap.min.css.map
+[2024-03-27 00:33:21 -0600] [1235878] [DEBUG] GET /static/img/favicon.jpg
+[2024-03-27 06:54:42 +0000] [1235870] [INFO] Handling signal: term
+[2024-03-27 00:54:43 -0600] [1235879] [INFO] Worker exiting (pid: 1235879)
+[2024-03-27 00:54:43 -0600] [1235878] [INFO] Worker exiting (pid: 1235878)
+[2024-03-27 00:54:43 -0600] [1235876] [INFO] Worker exiting (pid: 1235876)
+[2024-03-27 00:54:43 -0600] [1235877] [INFO] Worker exiting (pid: 1235877)
+[2024-03-27 00:54:43 -0600] [1235880] [INFO] Worker exiting (pid: 1235880)
+[2024-03-27 06:54:47 +0000] [1235870] [INFO] Shutting down: Master
+[2024-03-27 06:54:48 +0000] [1236601] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f85bce23f40>
+  on_reload: <function OnReload.on_reload at 0x7f85bce300d0>
+  when_ready: <function WhenReady.when_ready at 0x7f85bce301f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f85bce30310>
+  post_fork: <function Postfork.post_fork at 0x7f85bce30430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f85bce30550>
+  worker_int: <function WorkerInt.worker_int at 0x7f85bce30670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f85bce30790>
+  pre_exec: <function PreExec.pre_exec at 0x7f85bce308b0>
+  pre_request: <function PreRequest.pre_request at 0x7f85bce309d0>
+  post_request: <function PostRequest.post_request at 0x7f85bce30a60>
+  child_exit: <function ChildExit.child_exit at 0x7f85bce30b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f85bce30ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f85bce30dc0>
+  on_exit: <function OnExit.on_exit at 0x7f85bce30ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:54:48 +0000] [1236601] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:54:48 +0000] [1236601] [DEBUG] Arbiter booted
+[2024-03-27 06:54:48 +0000] [1236601] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1236601)
+[2024-03-27 06:54:48 +0000] [1236601] [INFO] Using worker: sync
+[2024-03-27 06:54:48 +0000] [1236606] [INFO] Booting worker with pid: 1236606
+[2024-03-27 06:54:48 +0000] [1236607] [INFO] Booting worker with pid: 1236607
+[2024-03-27 06:54:49 +0000] [1236608] [INFO] Booting worker with pid: 1236608
+[2024-03-27 06:54:49 +0000] [1236609] [INFO] Booting worker with pid: 1236609
+[2024-03-27 06:54:49 +0000] [1236610] [INFO] Booting worker with pid: 1236610
+[2024-03-27 06:54:49 +0000] [1236601] [DEBUG] 5 workers
+[2024-03-27 00:54:55 -0600] [1236608] [DEBUG] GET /
+[2024-03-27 00:54:55 -0600] [1236610] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:54:55 -0600] [1236609] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:54:55 -0600] [1236608] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:54:55 -0600] [1236606] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:54:55 -0600] [1236607] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:54:55 -0600] [1236609] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:54:55 -0600] [1236610] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:54:55 -0600] [1236610] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:54:55 -0600] [1236608] [DEBUG] GET /static/core/css/estilos.css.map
+[2024-03-27 00:54:55 -0600] [1236609] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:54:55 -0600] [1236608] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:54:55 -0600] [1236610] [DEBUG] GET /static/core/css/bootstrap.min.css.map
+[2024-03-27 00:54:55 -0600] [1236609] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:54:56 -0600] [1236606] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:54:56 -0600] [1236607] [DEBUG] GET /static/core/js/popper.min.js.map
+[2024-03-27 00:54:56 -0600] [1236609] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:54:56 -0600] [1236608] [DEBUG] GET /static/core/js/bootstrap.min.js.map
+[2024-03-27 00:54:56 -0600] [1236606] [DEBUG] GET /static/core/img/favicon.jpg
+[2024-03-27 06:56:14 +0000] [1236601] [INFO] Handling signal: term
+[2024-03-27 00:56:14 -0600] [1236607] [INFO] Worker exiting (pid: 1236607)
+[2024-03-27 00:56:14 -0600] [1236608] [INFO] Worker exiting (pid: 1236608)
+[2024-03-27 00:56:14 -0600] [1236609] [INFO] Worker exiting (pid: 1236609)
+[2024-03-27 00:56:14 -0600] [1236610] [INFO] Worker exiting (pid: 1236610)
+[2024-03-27 00:56:14 -0600] [1236606] [INFO] Worker exiting (pid: 1236606)
+[2024-03-27 06:56:15 +0000] [1236601] [INFO] Shutting down: Master
+[2024-03-27 06:56:16 +0000] [1236766] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/tmp/gunicorn-iag.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/produccion/iag
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1001
+  group: 1002
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/produccion/iag/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: iag
+  default_proc_name: iag.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5940867f40>
+  on_reload: <function OnReload.on_reload at 0x7f59408740d0>
+  when_ready: <function WhenReady.when_ready at 0x7f59408741f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f5940874310>
+  post_fork: <function Postfork.post_fork at 0x7f5940874430>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5940874550>
+  worker_int: <function WorkerInt.worker_int at 0x7f5940874670>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5940874790>
+  pre_exec: <function PreExec.pre_exec at 0x7f59408748b0>
+  pre_request: <function PreRequest.pre_request at 0x7f59408749d0>
+  post_request: <function PostRequest.post_request at 0x7f5940874a60>
+  child_exit: <function ChildExit.child_exit at 0x7f5940874b80>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5940874ca0>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5940874dc0>
+  on_exit: <function OnExit.on_exit at 0x7f5940874ee0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2024-03-27 06:56:16 +0000] [1236766] [INFO] Starting gunicorn 20.1.0
+[2024-03-27 06:56:16 +0000] [1236766] [DEBUG] Arbiter booted
+[2024-03-27 06:56:16 +0000] [1236766] [INFO] Listening at: unix:/tmp/gunicorn-iag.sock (1236766)
+[2024-03-27 06:56:16 +0000] [1236766] [INFO] Using worker: sync
+[2024-03-27 06:56:16 +0000] [1236771] [INFO] Booting worker with pid: 1236771
+[2024-03-27 06:56:16 +0000] [1236772] [INFO] Booting worker with pid: 1236772
+[2024-03-27 06:56:16 +0000] [1236773] [INFO] Booting worker with pid: 1236773
+[2024-03-27 06:56:16 +0000] [1236774] [INFO] Booting worker with pid: 1236774
+[2024-03-27 06:56:16 +0000] [1236775] [INFO] Booting worker with pid: 1236775
+[2024-03-27 06:56:16 +0000] [1236766] [DEBUG] 5 workers
+[2024-03-27 00:56:21 -0600] [1236774] [DEBUG] GET /
+[2024-03-27 00:56:21 -0600] [1236772] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:21 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:21 -0600] [1236775] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:21 -0600] [1236772] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:21 -0600] [1236771] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:21 -0600] [1236774] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:21 -0600] [1236773] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:21 -0600] [1236773] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:56:21 -0600] [1236774] [DEBUG] GET /static/core/css/estilos.css.map
+[2024-03-27 00:56:21 -0600] [1236775] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:56:21 -0600] [1236773] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:56:21 -0600] [1236774] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:56:21 -0600] [1236771] [DEBUG] GET /static/core/css/bootstrap.min.css.map
+[2024-03-27 00:56:21 -0600] [1236775] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:56:21 -0600] [1236771] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:56:21 -0600] [1236773] [DEBUG] GET /static/core/js/popper.min.js.map
+[2024-03-27 00:56:21 -0600] [1236771] [DEBUG] GET /static/core/js/bootstrap.min.js.map
+[2024-03-27 00:56:21 -0600] [1236773] [DEBUG] GET /static/core/img/favicon.jpg
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /
+[2024-03-27 00:56:22 -0600] [1236774] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:22 -0600] [1236772] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:22 -0600] [1236772] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:22 -0600] [1236774] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/css/estilos.css.map
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /
+[2024-03-27 00:56:22 -0600] [1236774] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:56:22 -0600] [1236772] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/js/popper.min.js.map
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/js/bootstrap.min.js.map
+[2024-03-27 00:56:22 -0600] [1236774] [DEBUG] GET /static/core/css/bootstrap.min.css.map
+[2024-03-27 00:56:22 -0600] [1236772] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:22 -0600] [1236772] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:22 -0600] [1236774] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:56:22 -0600] [1236774] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/js/bootstrap.min.js.map
+[2024-03-27 00:56:22 -0600] [1236772] [DEBUG] GET /static/core/js/popper.min.js.map
+[2024-03-27 00:56:22 -0600] [1236774] [DEBUG] GET /static/core/css/bootstrap.min.css.map
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/css/estilos.css.map
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:22 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:22 -0600] [1236772] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:22 -0600] [1236775] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:22 -0600] [1236771] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:23 -0600] [1236772] [DEBUG] GET /
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:56:23 -0600] [1236772] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:23 -0600] [1236775] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:23 -0600] [1236774] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:23 -0600] [1236772] [DEBUG] GET /
+[2024-03-27 00:56:23 -0600] [1236774] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:23 -0600] [1236775] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:23 -0600] [1236772] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:23 -0600] [1236772] [DEBUG] GET /
+[2024-03-27 00:56:23 -0600] [1236775] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:23 -0600] [1236774] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:23 -0600] [1236774] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:23 -0600] [1236775] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:23 -0600] [1236774] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:23 -0600] [1236774] [DEBUG] GET /
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:23 -0600] [1236775] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:23 -0600] [1236775] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:23 -0600] [1236772] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:23 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:23 -0600] [1236775] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:23 -0600] [1236772] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:23 -0600] [1236774] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:23 -0600] [1236771] [DEBUG] GET /
+[2024-03-27 00:56:24 -0600] [1236775] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:56:24 -0600] [1236772] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:24 -0600] [1236772] [DEBUG] Ignoring EPIPE
+[2024-03-27 00:56:24 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css
+[2024-03-27 00:56:24 -0600] [1236774] [DEBUG] GET /static/core/css/estilos.css
+[2024-03-27 00:56:24 -0600] [1236774] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js
+[2024-03-27 00:56:24 -0600] [1236775] [DEBUG] GET /static/core/js/jquery.min.js
+[2024-03-27 00:56:24 -0600] [1236772] [DEBUG] GET /static/core/js/jquery-3.3.1.min.js
+[2024-03-27 00:56:24 -0600] [1236773] [DEBUG] GET /static/core/js/popper.min.js
+[2024-03-27 00:56:24 -0600] [1236771] [DEBUG] GET /static/core/js/bootstrap.min.js
+[2024-03-27 00:56:24 -0600] [1236774] [DEBUG] GET /static/core/js/funciones.js
+[2024-03-27 00:56:24 -0600] [1236773] [DEBUG] GET /static/core/css/estilos.css.map
+[2024-03-27 00:56:24 -0600] [1236772] [DEBUG] GET /static/core/img/principal/imagen1.png
+[2024-03-27 00:56:24 -0600] [1236771] [DEBUG] GET /static/core/img/logo.png
+[2024-03-27 00:56:24 -0600] [1236773] [DEBUG] GET /static/core/js/bootstrap.bundle.min.js.map
+[2024-03-27 00:56:24 -0600] [1236772] [DEBUG] GET /static/core/img/principal/imagen2.png
+[2024-03-27 00:56:24 -0600] [1236771] [DEBUG] GET /static/core/js/bootstrap.min.js.map
+[2024-03-27 00:56:24 -0600] [1236774] [DEBUG] GET /static/core/js/popper.min.js.map
+[2024-03-27 00:56:24 -0600] [1236775] [DEBUG] GET /static/core/img/principal/imagen3.png
+[2024-03-27 00:56:24 -0600] [1236773] [DEBUG] GET /static/core/css/bootstrap.min.css.map
+[2024-03-27 00:56:24 -0600] [1236774] [DEBUG] GET /static/core/img/favicon.jpg
