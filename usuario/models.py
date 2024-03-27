@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from .contantes import *
+from core.contantes import *
 
 # Create your models here.
 
